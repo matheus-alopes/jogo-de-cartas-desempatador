@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #02081f;
+    display: flex;
+    justify-content: center;
+}
+
+body main {
+    padding: 5rem;
+    display: grid;
+    grid-template-areas: "instructions index"
+                         "game-section game-section";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20vh;
+}
+
+body main .instructions-section {
+    grid-area: instructions;
+    margin-right: 15rem;
+}
+
+body main .instructions-section h1 {
+    color: #ffa500;
+    font-size: 6rem;
+}
+
+body main .instructions-section h3 {
+    margin-left: 8rem;
+    color: #ff0000;
+    font-size: 3rem;
+}
+
+body main .strenght-index-section {
+    grid-area: index;
+    background-image: url(../images/forca-das-cartas.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+body main .game-section {
+    grid-area: game-section;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+body main .game-section .player {
+    margin: 0 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+body main .game-section .player h2 {
+    color: #ffa500;
+    text-shadow: 1.5px 0.7px #ff0000;
+    font-size: 3rem;
+}
+
+body main .game-section .player .card-img {
+    width: 30rem;
+    margin: 3rem 0;
+    align-self: center;
+}
+
+body main .game-section .player button {
+    width: 30rem;
+    height: 5rem;
+    border-radius: 15px;
+    font-size: 2rem;
+    align-self: center;
+}
+
+body main .game-section .player .hover-button:hover {
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    background-color: #013568;
+    color: #ffffff;
+}
+
+body main .game-section .player .sword-icon {
+    width: 20rem;
+    position: absolute;
+    top: 20rem;
+    transition: 0.4s;
+}
+
+body main .game-section .player .player1-sword-icon {
+    right: -20rem;
+}
+
+body main .game-section .player .player2-sword-icon {
+    left: -20rem;
+}
+
+body main .game-section .floating-alert-box {
+    width: 40rem;
+    height: 20rem;
+    padding: 4rem 1rem 1rem 1rem;
+    background-color: #001900a9;
+    border: 1px solid #000000;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 4rem;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    right: 36.2%;
+    top: -15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+}
+
+body main .game-section .floating-alert-box button {
+    width: 20rem;
+    height: 5rem;
+    background-color: #e3ae4d;
+    border-radius: 1rem;
+    color: #505050;
+    font-size: 2rem;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+body main .game-section .floating-alert-box button:hover {
+    background-color: #505050;
+    color: #ffa500;
+}

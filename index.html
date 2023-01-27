@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./images/fav-icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <title>Desempate Rápido</title>
+</head>
+
+<body>
+    <main>
+        <section class="instructions-section">
+            <h1>Vamos desempatar?</h1>
+
+            <h3>Quem tirar a maior carta, vence!</h3>
+        </section>
+
+        <section class="strenght-index-section"></section>
+
+        <section class="game-section">
+            <div class="player player1">
+                <h2>Jogador 1</h2>
+
+                <img src="./images/fundo-de-carta1.png" alt="carta" class="card-img" id="card1">
+
+                <button id="button1" class="hover-button">Tire sua carta</button>
+
+                <img class="sword-icon player1-sword-icon" src="./images/icone-status-player1.png" alt="icone de espada"></img>
+            </div>
+
+            <div class="player player2">
+                <h2>Jogador 2</h2>
+
+                <img src="./images/fundo-de-carta-2.png" alt="carta" class="card-img" id="card2">
+
+                <button id="button2" class="hover-button">Tire sua carta</button>
+
+                <img class="sword-icon player2-sword-icon" src="./images/icone-status-player2.png" alt="icone de espada"></img>
+            </div>
+
+            <div class="floating-alert-box">
+                <p></p>
+
+                <button>Outra Rodada</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./JS/index.js" type="module"></script>
+</body>
+</html>
