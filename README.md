@@ -27,7 +27,7 @@ O usuário da página deve ser capaz de:
 
 ### Funcionamento do Projeto
 
-<img src="src/screenshots/gif-project-working.gif" alt="projeto funcionando" />
+<img src="images/gif/gif-project-working.gif" alt="projeto funcionando" />
 
 ### Links
 
